@@ -7,7 +7,7 @@ const {courseEnrollmentEmail}=require("../mail/templates/courseEnrollmentEmail")
 
 
 // capture the payment and initiate the Razorpay order
-exports.captureEmail=async(req,res)=>{
+exports.capturePayment=async(req,res)=>{
     // get courseId and userId
     const {courseId}=req.body;
     const userId=req.user.id;
